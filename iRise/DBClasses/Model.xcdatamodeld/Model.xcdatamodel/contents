@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17C88" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="ApplicatorDetailsDB" representedClassName="ApplicatorDetailsDB" syncable="YES">
+        <attribute name="applicatorDetailsDBIdentifier" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="applicatorId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="itemId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="product" optional="YES" deletionRule="Nullify" destinationEntity="Product" inverseName="applicatorDetailsDB" inverseEntity="Product" syncable="YES"/>
+    </entity>
+    <entity name="ClientDetailsDB" representedClassName="ClientDetailsDB" syncable="YES">
+        <attribute name="clientDetailsDBIdentifier" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="clientId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="itemId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="product" optional="YES" deletionRule="Nullify" destinationEntity="Product" inverseName="clientDetailsDB" inverseEntity="Product" syncable="YES"/>
+    </entity>
+    <entity name="CollectionDetailsDB" representedClassName="CollectionDetailsDB" syncable="YES">
+        <attribute name="collectionDetailsDBIdentifier" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="collectionId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="itemId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="product" optional="YES" deletionRule="Nullify" destinationEntity="Product" inverseName="collectionDetailsDB" inverseEntity="Product" syncable="YES"/>
+    </entity>
+    <entity name="ColourDetailsDB" representedClassName="ColourDetailsDB" syncable="YES">
+        <attribute name="colourDetailsDBIdentifier" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="colourId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="itemId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="product" optional="YES" deletionRule="Nullify" destinationEntity="Product" inverseName="colourDetailsDB" inverseEntity="Product" syncable="YES"/>
+    </entity>
+    <entity name="CompanyDetailsDB" representedClassName="CompanyDetailsDB" syncable="YES">
+        <attribute name="companyDetailsDBIdentifier" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="companyId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="itemId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="product" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Product" inverseName="companyDetailsDB" inverseEntity="Product" syncable="YES"/>
+    </entity>
+    <entity name="ComponentDetailsDB" representedClassName="ComponentDetailsDB" syncable="YES">
+        <attribute name="componentDetailsDBIdentifier" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="componentId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="itemId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="product" optional="YES" deletionRule="Nullify" destinationEntity="Product" inverseName="componentDetailsDB" inverseEntity="Product" syncable="YES"/>
+    </entity>
+    <entity name="DesignerDetailsDB" representedClassName="DesignerDetailsDB" syncable="YES">
+        <attribute name="designerDetailsDBIdentifier" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="designerId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="itemId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="product" optional="YES" deletionRule="Nullify" destinationEntity="Product" inverseName="designerDetailsDB" inverseEntity="Product" syncable="YES"/>
+    </entity>
+    <entity name="Product" representedClassName="Product" syncable="YES">
+        <attribute name="align" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="internalBaseClassIdentifier" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pacId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="pacName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pmuId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="pmuName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="applicatorDetailsDB" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ApplicatorDetailsDB" inverseName="product" inverseEntity="ApplicatorDetailsDB" syncable="YES"/>
+        <relationship name="clientDetailsDB" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ClientDetailsDB" inverseName="product" inverseEntity="ClientDetailsDB" syncable="YES"/>
+        <relationship name="collectionDetailsDB" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CollectionDetailsDB" inverseName="product" inverseEntity="CollectionDetailsDB" syncable="YES"/>
+        <relationship name="colourDetailsDB" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ColourDetailsDB" inverseName="product" inverseEntity="ColourDetailsDB" syncable="YES"/>
+        <relationship name="companyDetailsDB" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CompanyDetailsDB" inverseName="product" inverseEntity="CompanyDetailsDB" syncable="YES"/>
+        <relationship name="componentDetailsDB" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ComponentDetailsDB" inverseName="product" inverseEntity="ComponentDetailsDB" syncable="YES"/>
+        <relationship name="designerDetailsDB" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DesignerDetailsDB" inverseName="product" inverseEntity="DesignerDetailsDB" syncable="YES"/>
+        <relationship name="productDetailsDB" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProductDetailsDB" inverseName="product" inverseEntity="ProductDetailsDB" syncable="YES"/>
+        <relationship name="productsDetailsDB" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProductsDetailsDB" inverseName="product" inverseEntity="ProductsDetailsDB" syncable="YES"/>
+    </entity>
+    <entity name="ProductDetailsDB" representedClassName="ProductDetailsDB" syncable="YES">
+        <attribute name="itemId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productDetailsDBIdentifier" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="productsUsedId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="product" optional="YES" deletionRule="Nullify" destinationEntity="Product" inverseName="productDetailsDB" inverseEntity="Product" syncable="YES"/>
+    </entity>
+    <entity name="ProductsDetailsDB" representedClassName="ProductsDetailsDB" syncable="YES">
+        <attribute name="itemId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productsDetailsDBIdentifier" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="productsId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="product" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Product" inverseName="productsDetailsDB" inverseEntity="Product" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Product" positionX="0" positionY="0" width="135" height="300"/>
+        <element name="DesignerDetailsDB" positionX="200" positionY="0" width="135" height="120"/>
+        <element name="ColourDetailsDB" positionX="400" positionY="0" width="135" height="120"/>
+        <element name="ProductDetailsDB" positionX="600" positionY="0" width="135" height="120"/>
+        <element name="ComponentDetailsDB" positionX="800" positionY="0" width="135" height="120"/>
+        <element name="CollectionDetailsDB" positionX="1000" positionY="0" width="135" height="120"/>
+        <element name="ClientDetailsDB" positionX="1200" positionY="0" width="135" height="120"/>
+        <element name="ApplicatorDetailsDB" positionX="1400" positionY="0" width="135" height="120"/>
+        <element name="CompanyDetailsDB" positionX="207" positionY="117" width="128" height="120"/>
+        <element name="ProductsDetailsDB" positionX="216" positionY="135" width="128" height="120"/>
+    </elements>
+</model>

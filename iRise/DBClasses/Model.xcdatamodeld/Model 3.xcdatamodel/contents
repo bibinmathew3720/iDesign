@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15F34" minimumToolsVersion="Automatic">
+    <entity name="Architect" representedClassName="Architect" syncable="YES">
+        <attribute name="architectId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="architectIdentifier" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="projectId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="project" optional="YES" deletionRule="Nullify" destinationEntity="Project" inverseName="architect" inverseEntity="Project" syncable="YES"/>
+    </entity>
+    <entity name="Collection" representedClassName="Collection" syncable="YES">
+        <attribute name="collectionId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="collectionIdentifier" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="projectId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="project" optional="YES" deletionRule="Nullify" destinationEntity="Project" inverseName="collection" inverseEntity="Project" syncable="YES"/>
+    </entity>
+    <entity name="Objectcoated" representedClassName="Objectcoated" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="objectcoatedIdentifier" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="objectsCoatedId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="projectId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="project" optional="YES" deletionRule="Nullify" destinationEntity="Project" inverseName="objectcoated" inverseEntity="Project" syncable="YES"/>
+    </entity>
+    <entity name="Products" representedClassName="Products" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productsIdentifier" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="productsUsedId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="projectId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="project" optional="YES" deletionRule="Nullify" destinationEntity="Project" inverseName="products" inverseEntity="Project" syncable="YES"/>
+    </entity>
+    <entity name="Project" representedClassName="Project" syncable="YES">
+        <attribute name="align" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="buildingType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="buildingTypeId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cityId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="completionYear" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="projectIdentifier" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="architect" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Architect" inverseName="project" inverseEntity="Architect" syncable="YES"/>
+        <relationship name="collection" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Collection" inverseName="project" inverseEntity="Collection" syncable="YES"/>
+        <relationship name="objectcoated" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Objectcoated" inverseName="project" inverseEntity="Objectcoated" syncable="YES"/>
+        <relationship name="products" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Products" inverseName="project" inverseEntity="Products" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Architect" positionX="400" positionY="0" width="135" height="120"/>
+        <element name="Collection" positionX="0" positionY="0" width="135" height="120"/>
+        <element name="Objectcoated" positionX="200" positionY="0" width="135" height="120"/>
+        <element name="Products" positionX="1000" positionY="0" width="135" height="120"/>
+        <element name="Project" positionX="600" positionY="0" width="135" height="270"/>
+    </elements>
+</model>

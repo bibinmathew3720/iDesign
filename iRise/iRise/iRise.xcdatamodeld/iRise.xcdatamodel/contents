@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16A323" minimumToolsVersion="Xcode 7.3" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="ArchitectDB" syncable="YES">
+        <attribute name="iD" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="project_id" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="architect" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProjectsDB" inverseName="architects" inverseEntity="ProjectsDB" syncable="YES"/>
+    </entity>
+    <entity name="ClientDB" representedClassName="ClientDB" syncable="YES">
+        <attribute name="client_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="item_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CollectionDB" syncable="YES">
+        <attribute name="iD" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="project_id" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="collection" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProjectsDB" inverseName="collections" inverseEntity="ProjectsDB" syncable="YES"/>
+    </entity>
+    <entity name="ColourDB" representedClassName="ColourDB" syncable="YES">
+        <attribute name="colour_id" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="item_id" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ObjectDB" syncable="YES">
+        <attribute name="iD" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="project_id" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="object" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProjectsDB" inverseName="objects" inverseEntity="ProjectsDB" syncable="YES"/>
+    </entity>
+    <entity name="ProductDB" syncable="YES">
+        <attribute name="iD" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="project_id" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="product" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProjectsDB" inverseName="products" inverseEntity="ProjectsDB" syncable="YES"/>
+    </entity>
+    <entity name="ProjectsDB" representedClassName="PROJECTS" syncable="YES">
+        <attribute name="align" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="project_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="architects" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ArchitectDB" inverseName="architect" inverseEntity="ArchitectDB" syncable="YES"/>
+        <relationship name="collections" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CollectionDB" inverseName="collection" inverseEntity="CollectionDB" syncable="YES"/>
+        <relationship name="objects" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ObjectDB" inverseName="object" inverseEntity="ObjectDB" syncable="YES"/>
+        <relationship name="products" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProductDB" inverseName="product" inverseEntity="ProductDB" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ArchitectDB" positionX="16" positionY="57" width="128" height="103"/>
+        <element name="ClientDB" positionX="-261" positionY="-99" width="128" height="105"/>
+        <element name="CollectionDB" positionX="-324" positionY="108" width="128" height="103"/>
+        <element name="ColourDB" positionX="-270" positionY="-108" width="128" height="105"/>
+        <element name="ObjectDB" positionX="-20" positionY="-72" width="128" height="103"/>
+        <element name="ProductDB" positionX="16" positionY="-198" width="128" height="103"/>
+        <element name="ProjectsDB" positionX="-468" positionY="-252" width="128" height="225"/>
+    </elements>
+</model>
