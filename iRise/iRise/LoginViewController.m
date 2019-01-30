@@ -28,7 +28,7 @@
     [self landScapeMode:NO];
     self.navigationController.navigationBarHidden = YES;
     if (![self IsIPad]) {
-        [self.ContentLabel setFont:[UIFont fontWithName:@"FrutigerLTStd-Light" size:13]];
+        [self.ContentLabel setFont:[UIFont systemFontOfSize:13 weight:UIFontWeightLight]];
     }
 }
 

@@ -122,7 +122,7 @@
     [cell.projectImageView setShowActivityIndicatorView:YES];
     cell.title.text = data.name;
     if (![self IsIPad]) {
-        [cell.title setFont:[UIFont fontWithName:@"FrutigerLTStd-Roman" size:13]];
+        [cell.title setFont:[UIFont systemFontOfSize:13]];
     }
 
     return cell;

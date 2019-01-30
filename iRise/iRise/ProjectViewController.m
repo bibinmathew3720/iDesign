@@ -49,8 +49,8 @@
     UISwipeGestureRecognizer *leftGuster = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeHandlerLeft:)];
     UISwipeGestureRecognizer *rightGuster = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeHandlerRight:)];
     if (![self IsIPad]) {
-        [_rightTitle setFont:[UIFont fontWithName:@"FrutigerLTStd-Roman" size:35]];
-        [_leftTitle setFont:[UIFont fontWithName:@"FrutigerLTStd-Roman" size:35]];
+        [_rightTitle setFont:[UIFont systemFontOfSize:35]];
+        [_leftTitle setFont:[UIFont systemFontOfSize:35]];
     }
     
     [leftGuster setDirection:(UISwipeGestureRecognizerDirectionLeft)];
@@ -318,8 +318,8 @@
        cell.DetailsLabel.text = [contentArray objectAtIndex:indexPath.row];
     
     if ([self IsIPad]) {
-        [cell.TitleLabel setFont:[UIFont fontWithName:@"FrutigerLTStd-Roman" size:22]];
-        [cell.DetailsLabel setFont:[UIFont fontWithName:@"FrutigerLTStd-Roman" size:26]];
+        [cell.TitleLabel setFont:[UIFont systemFontOfSize:22]];
+        [cell.DetailsLabel setFont:[UIFont systemFontOfSize:26]];
     }
 
     cell.contentView.frame = cell.bounds;

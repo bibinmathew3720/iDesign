@@ -28,8 +28,8 @@
     [self.view addGestureRecognizer:gestureRecognizer];
     [SVProgressHUD resetOffsetFromCenter];
     if ([self IsIPad]) {
-        [self.WelcomeLabel setFont:[UIFont fontWithName:@"FrutigerLTStd-Bold" size:36]];
-        [self.ContentLabel setFont:[UIFont fontWithName:@"FrutigerLTStd-Light" size:19]];
+        [self.WelcomeLabel setFont:[UIFont systemFontOfSize:36 weight:UIFontWeightBold]];
+        [self.ContentLabel setFont:[UIFont systemFontOfSize:19 weight:UIFontWeightLight]];
     }
    
     

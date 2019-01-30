@@ -66,7 +66,7 @@
         return;
     }
     if (![self IsIPad])
-        self.TitleLabel.font=[UIFont fontWithName:@"FrutigerLTStd-Bold" size:12];
+        self.TitleLabel.font=[UIFont boldSystemFontOfSize:12];
     
     [self animateView:_SearchView];
     _SearchTableView.estimatedRowHeight = UITableViewAutomaticDimension;
@@ -127,7 +127,7 @@
     
     UILabel *label = [cell viewWithTag:100];
     if (![self IsIPad]) {
-        [label setFont:[UIFont fontWithName:@"FrutigerLTStd-Roman" size:12]];
+        [label setFont:[UIFont systemFontOfSize:12]];
     }
     if (indexPath.row == MenuArray.count) {
         label.text = @"Clear";
@@ -231,15 +231,15 @@
     if (indexPath.row == listArray.count) {
         SearchButtonCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"SearchCellIdentifier" forIndexPath:indexPath];
         if (![self IsIPad])
-            [cell.searchButton setFont:[UIFont fontWithName:@"FrutigerLTStd-Roman" size:10]];
+            [cell.searchButton setFont:[UIFont systemFontOfSize:10]];
         return cell;
     }
     else if (indexPath.row == 0)
     {
         SearchCollectionViewCell *cell=[collectionView dequeueReusableCellWithReuseIdentifier:@"EntryCellIdentifier" forIndexPath:indexPath];
         if (![self IsIPad]) {
-            [cell.KeywordText setFont:[UIFont fontWithName:@"FrutigerLTStd-Light" size:10]];
-            [cell.TitleLabel setFont:[UIFont fontWithName:@"FrutigerLTStd-Light" size:9]];
+            [cell.KeywordText setFont:[UIFont systemFontOfSize:10 weight:UIFontWeightLight]];
+            [cell.TitleLabel setFont:[UIFont systemFontOfSize:9 weight:UIFontWeightLight]];
         }
         [cell.KeywordText setHidden:NO];
         [cell.DisplayLabel setHidden:YES];
@@ -256,8 +256,8 @@
         SearchCollectionViewCell *cell=[collectionView dequeueReusableCellWithReuseIdentifier:@"EntryCellIdentifier" forIndexPath:indexPath];
     
         if (![self IsIPad]) {
-            [cell.DisplayLabel setFont:[UIFont fontWithName:@"FrutigerLTStd-Light" size:10]];
-            [cell.TitleLabel setFont:[UIFont fontWithName:@"FrutigerLTStd-Light" size:9]];
+            [cell.DisplayLabel setFont:[UIFont systemFontOfSize:10 weight:UIFontWeightLight]];
+            [cell.TitleLabel setFont:[UIFont systemFontOfSize:9 weight:UIFontWeightLight]];
         }
         cell.DisplayLabel.tag=3000+indexPath.row;
         cell.DisplayLabel.text=@"";

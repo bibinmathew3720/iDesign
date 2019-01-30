@@ -74,21 +74,21 @@ typedef NS_ENUM(NSInteger, kSelectedMenu) {
 
 -(void)ConfigureView{
     if (![self IsIPad]) {
-        [self.TUserProfileLabel setFont:[UIFont fontWithName:@"FrutigerLTStd-Bold" size:14]];
-        [self.TNameLabel setFont:[UIFont fontWithName:@"FrutigerLTStd-Light" size:10]];
-        [self.UsernameLabel setFont:[UIFont fontWithName:@"FrutigerLTStd-Roman" size:12]];
-        [self.TCityLabel setFont:[UIFont fontWithName:@"FrutigerLTStd-Light" size:10]];
-        [self.CityLabel setFont:[UIFont fontWithName:@"FrutigerLTStd-Roman" size:12]];
-        [self.TCountryLabel setFont:[UIFont fontWithName:@"FrutigerLTStd-Light" size:10]];
-        [self.CountryLabel setFont:[UIFont fontWithName:@"FrutigerLTStd-Roman" size:12]];
-        [self.TEmailLabel setFont:[UIFont fontWithName:@"FrutigerLTStd-Light" size:10]];
-        [self.EmailLabel setFont:[UIFont fontWithName:@"FrutigerLTStd-Roman" size:12]];
-        [self.TSettingsLabel setFont:[UIFont fontWithName:@"FrutigerLTStd-Bold" size:14]];
-        [self.TDownloadLabel setFont:[UIFont fontWithName:@"FrutigerLTStd-Roman" size:12]];
-        [self.contactHeadinf setFont:[UIFont fontWithName:@"FrutigerLTStd-Bold" size:14]];
-        [self.contactDetails setFont:[UIFont fontWithName:@"FrutigerLTStd-Roman" size:12]];
-        [self.contactEmail.titleLabel setFont:[UIFont fontWithName:@"FrutigerLTStd-Roman" size:12]];
-        [self.ContactButton.titleLabel setFont:[UIFont fontWithName:@"FrutigerLTStd-Roman" size:12]];
+        [self.TUserProfileLabel setFont:[UIFont boldSystemFontOfSize:14]];
+        [self.TNameLabel setFont:[UIFont systemFontOfSize:10 weight:UIFontWeightLight]];
+        [self.UsernameLabel setFont:[UIFont systemFontOfSize:12]];
+        [self.TCityLabel setFont:[UIFont systemFontOfSize:10 weight:UIFontWeightLight]];
+        [self.CityLabel setFont:[UIFont systemFontOfSize:12]];
+        [self.TCountryLabel setFont:[UIFont systemFontOfSize:10 weight:UIFontWeightLight]];
+        [self.CountryLabel setFont:[UIFont systemFontOfSize:12]];
+        [self.TEmailLabel setFont:[UIFont systemFontOfSize:10 weight:UIFontWeightLight]];
+        [self.EmailLabel setFont:[UIFont systemFontOfSize:12]];
+        [self.TSettingsLabel setFont:[UIFont boldSystemFontOfSize:14]];
+        [self.TDownloadLabel setFont:[UIFont systemFontOfSize:12]];
+        [self.contactHeadinf setFont:[UIFont boldSystemFontOfSize:14]];
+        [self.contactDetails setFont:[UIFont systemFontOfSize:12]];
+        [self.contactEmail.titleLabel setFont:[UIFont systemFontOfSize:12]];
+        [self.ContactButton.titleLabel setFont:[UIFont systemFontOfSize:12]];
     }
 }
 -(void) getMenu
@@ -266,7 +266,7 @@ typedef NS_ENUM(NSInteger, kSelectedMenu) {
     [self viewDidLayoutSubviews];
     
     if (![self IsIPad]) {
-        [label setFont:[UIFont fontWithName:@"FrutigerLTStd-Roman" size:13]];
+        [label setFont:[UIFont systemFontOfSize:13]];
     }
     if (tableView.tag == 21) {
         label.text = [_menu objectAtIndex:indexPath.row];

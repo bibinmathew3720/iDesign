@@ -51,8 +51,8 @@
     cell.title.text = [menuTitleArray objectAtIndex:indexPath.item];
     cell.discription.text = [menuDescriptionArray objectAtIndex:indexPath.item];
     if ([self IsIPad]) {
-        [cell.title setFont:[UIFont fontWithName:@"FrutigerLTStd-Bold" size:22]];
-        [cell.discription setFont:[UIFont fontWithName:@"FrutigerLTStd-Roman" size:18]];
+        [cell.title setFont:[UIFont boldSystemFontOfSize:22]];
+        [cell.discription setFont:[UIFont systemFontOfSize:18 weight:UIFontWeightRegular]];
     }
     
     return cell;
