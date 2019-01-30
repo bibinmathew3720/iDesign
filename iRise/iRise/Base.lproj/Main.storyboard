@@ -11,17 +11,6 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="FrutigerLTStd-Bold.otf">
-            <string>FrutigerLTStd-Bold</string>
-        </array>
-        <array key="FrutigerLTStd-Light.otf">
-            <string>FrutigerLTStd-Light</string>
-        </array>
-        <array key="FrutigerLTStd-Roman.otf">
-            <string>FrutigerLTStd-Roman</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -287,20 +276,20 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veO-go-463">
-                                <rect key="frame" x="60" y="647" width="126" height="29"/>
-                                <fontDescription key="fontDescription" name="FrutigerLTStd-Bold" family="Frutiger LT Std" pointSize="29"/>
+                                <rect key="frame" x="60" y="637" width="125.5" height="35"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3d-7S-JAg">
-                                <rect key="frame" x="60" y="694" width="909" height="42"/>
+                                <rect key="frame" x="60" y="690" width="909" height="50.5"/>
                                 <string key="text">iDesign is a unique Furniture Showcase App that presents the many projects where Jotun Powder Coating products have been implemented. You can simply navigate between a choice of furnitures and interiors accessories through our easy-to-use menu and learn more details including products used, applicator and owner details and locations.</string>
-                                <fontDescription key="fontDescription" name="FrutigerLTStd-Light" family="Frutiger LT Std" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qPo-zP-KTS">
-                                <rect key="frame" x="60" y="766" width="267" height="44"/>
+                                <rect key="frame" x="60" y="770.5" width="274" height="44"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backarrow" translatesAutoresizingMaskIntoConstraints="NO" id="XTU-5W-aaj">
                                         <rect key="frame" x="16" y="14" width="11" height="16"/>
@@ -310,8 +299,8 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SWIPE LEFT FOR A USER GUIDE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9oH-Hx-DzQ">
-                                        <rect key="frame" x="35" y="15" width="216" height="15"/>
-                                        <fontDescription key="fontDescription" name="FrutigerLTStd-Roman" family="Frutiger LT Std" pointSize="15"/>
+                                        <rect key="frame" x="35" y="13.5" width="223" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -452,19 +441,19 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20D-vQ-Jhd">
-                                                    <rect key="frame" x="53" y="9" width="39" height="14"/>
-                                                    <fontDescription key="fontDescription" name="FrutigerLTStd-Bold" family="Frutiger LT Std" pointSize="14"/>
+                                                    <rect key="frame" x="53" y="9" width="38.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" text="The contents in the app are presented horizontal orientation for better viewing " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cWJ-BU-SHW">
-                                                    <rect key="frame" x="54" y="25" width="128" height="106"/>
-                                                    <fontDescription key="fontDescription" name="FrutigerLTStd-Roman" family="Frutiger LT Std" pointSize="10"/>
+                                                    <rect key="frame" x="54" y="28" width="128" height="103"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ugmobile" translatesAutoresizingMaskIntoConstraints="NO" id="FWp-Dx-lKp">
-                                                    <rect key="frame" x="8" y="8" width="33" height="17"/>
+                                                    <rect key="frame" x="8" y="9.5" width="33" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="33" id="i8m-ip-ZwJ"/>
                                                     </constraints>
@@ -541,7 +530,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0vl-ke-c0F">
-                                <rect key="frame" x="0.0" y="64" width="1024" height="40"/>
+                                <rect key="frame" x="0.0" y="20" width="1024" height="40"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navJotun" translatesAutoresizingMaskIntoConstraints="NO" id="tpN-lV-dP2">
                                         <rect key="frame" x="16" y="12" width="57" height="17"/>
@@ -599,7 +588,7 @@
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GB8-Ux-FTV">
-                                <rect key="frame" x="50" y="134" width="934" height="1212"/>
+                                <rect key="frame" x="50" y="90" width="934" height="1256"/>
                                 <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HvO-gs-eYo">
                                     <size key="itemSize" width="215" height="129"/>
@@ -616,11 +605,11 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="tower_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Mm7-Hb-PRV">
-                                                    <rect key="frame" x="0.0" y="0.0" width="215" height="104"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="215" height="100.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVO-6V-2ej">
-                                                    <rect key="frame" x="8" y="113" width="207" height="16"/>
-                                                    <fontDescription key="fontDescription" name="FrutigerLTStd-Roman" family="Frutiger LT Std" pointSize="16"/>
+                                                    <rect key="frame" x="8" y="109.5" width="207" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -700,7 +689,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6MH-gb-MIS" userLabel="navView">
-                                <rect key="frame" x="0.0" y="64" width="1024" height="40"/>
+                                <rect key="frame" x="0.0" y="20" width="1024" height="40"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navJotun" translatesAutoresizingMaskIntoConstraints="NO" id="9Z5-Q5-5zi">
                                         <rect key="frame" x="38" y="12" width="57" height="17"/>
@@ -771,13 +760,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jrv-zk-HH2">
-                                <rect key="frame" x="0.0" y="104" width="1024" height="1262"/>
+                                <rect key="frame" x="0.0" y="60" width="1024" height="1306"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZI-4I-Rhk">
-                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1262"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1306"/>
                                         <subviews>
                                             <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5V0-IA-2I6">
-                                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1262"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1306"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </imageView>
                                         </subviews>
@@ -804,18 +793,18 @@
                                 </constraints>
                             </view>
                             <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJw-2h-QV6" userLabel="TitleView">
-                                <rect key="frame" x="8" y="344" width="1008" height="51"/>
+                                <rect key="frame" x="8" y="300" width="1008" height="61"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zpz-io-uMs">
-                                        <rect key="frame" x="20" y="1" width="829" height="50"/>
+                                        <rect key="frame" x="20" y="1" width="829" height="60"/>
                                         <gestureRecognizers/>
-                                        <fontDescription key="fontDescription" name="FrutigerLTStd-Bold" family="Frutiger LT Std" pointSize="50"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                         <color key="textColor" red="0.16750219464302063" green="0.21466439962387085" blue="0.38756519556045532" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="3" height="3"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3G-2P-Wvf">
-                                        <rect key="frame" x="959" y="12" width="29" height="27"/>
+                                        <rect key="frame" x="959" y="17" width="29" height="27"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="27" id="ins-we-UP3"/>
@@ -841,18 +830,18 @@
                                 </constraints>
                             </view>
                             <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IsD-GV-Ylx" userLabel="TitleView">
-                                <rect key="frame" x="8" y="344" width="1008" height="51"/>
+                                <rect key="frame" x="8" y="300" width="1008" height="61"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukX-WE-nbl">
-                                        <rect key="frame" x="159" y="0.0" width="829" height="50"/>
+                                        <rect key="frame" x="159" y="0.0" width="829" height="60"/>
                                         <gestureRecognizers/>
-                                        <fontDescription key="fontDescription" name="FrutigerLTStd-Bold" family="Frutiger LT Std" pointSize="50"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                         <color key="textColor" red="0.16747623682022095" green="0.21067148447036743" blue="0.3917202353477478" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="3" height="3"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jk8-eC-PNN">
-                                        <rect key="frame" x="20" y="13" width="29" height="27"/>
+                                        <rect key="frame" x="20" y="18" width="29" height="27"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="29" id="FsW-82-Siw"/>
                                             <constraint firstAttribute="height" constant="27" id="lVh-ae-2jO"/>
@@ -904,13 +893,13 @@
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="27" id="MzF-g5-qce"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" name="FrutigerLTStd-Bold" family="Frutiger LT Std" pointSize="13"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                                                     <color key="textColor" red="0.81414812803268433" green="0.6600373387336731" blue="0.14790076017379761" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ethihad Towers" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7hh-Bt-j7N">
-                                                                    <rect key="frame" x="0.0" y="43" width="173" height="17"/>
-                                                                    <fontDescription key="fontDescription" name="FrutigerLTStd-Roman" family="Frutiger LT Std" pointSize="17"/>
+                                                                    <rect key="frame" x="0.0" y="43" width="173" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -1055,21 +1044,21 @@
                                             <constraint firstAttribute="width" constant="82" id="FqN-HQ-faU"/>
                                             <constraint firstAttribute="height" constant="21" id="eBb-Rn-DdP"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="FrutigerLTStd-Bold" family="Frutiger LT Std" pointSize="15"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For more informations, please contact" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lf6-Sy-WrI">
-                                        <rect key="frame" x="29" y="71" width="261" height="32"/>
-                                        <fontDescription key="fontDescription" name="FrutigerLTStd-Roman" family="Frutiger LT Std" pointSize="14"/>
+                                        <rect key="frame" x="29" y="71" width="261" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" name="FrutigerLTStd-Roman" family="Frutiger LT Std" pointSize="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         </variation>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvu-60-NR6">
-                                        <rect key="frame" x="29" y="117" width="265" height="20"/>
+                                        <rect key="frame" x="29" y="123.5" width="265" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="H6B-92-ejp"/>
                                         </constraints>
@@ -1085,7 +1074,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STT-Qd-ngR">
-                                        <rect key="frame" x="29" y="100" width="241" height="20"/>
+                                        <rect key="frame" x="29" y="106.5" width="241" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="k8L-JF-jiW"/>
                                         </constraints>
@@ -1132,7 +1121,7 @@
                                             <constraint firstAttribute="height" constant="21" id="YnF-dB-wLR"/>
                                             <constraint firstAttribute="width" constant="82" id="t8j-KI-zA0"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="FrutigerLTStd-Bold" family="Frutiger LT Std" pointSize="15"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1142,11 +1131,11 @@
                                             <constraint firstAttribute="height" constant="21" id="2CA-Yd-qfm"/>
                                             <constraint firstAttribute="width" constant="236" id="BuG-fG-Ghn"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" name="FrutigerLTStd-Roman" family="Frutiger LT Std" pointSize="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         </variation>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpq-FS-j80">
@@ -1190,7 +1179,7 @@
                                             <constraint firstAttribute="height" constant="21" id="9FS-7E-NKP"/>
                                             <constraint firstAttribute="width" constant="105" id="WEn-CB-dsu"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="FrutigerLTStd-Bold" family="Frutiger LT Std" pointSize="15"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1199,7 +1188,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="7yv-ko-bf2"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="FrutigerLTStd-Roman" family="Frutiger LT Std" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1209,7 +1198,7 @@
                                             <constraint firstAttribute="height" constant="21" id="HJn-9j-G9d"/>
                                             <constraint firstAttribute="width" constant="65" id="Hax-8h-HQ9"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="FrutigerLTStd-Light" family="Frutiger LT Std" pointSize="11"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="11"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1218,7 +1207,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="gHD-9S-BPz"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="FrutigerLTStd-Roman" family="Frutiger LT Std" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1227,7 +1216,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="ZBB-Q9-UK4"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="FrutigerLTStd-Roman" family="Frutiger LT Std" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1237,7 +1226,7 @@
                                             <constraint firstAttribute="height" constant="21" id="1Ex-Ue-OWD"/>
                                             <constraint firstAttribute="width" constant="65" id="AoP-0B-4cp"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="FrutigerLTStd-Light" family="Frutiger LT Std" pointSize="11"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="11"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1246,7 +1235,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="pG4-6u-YLY"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="FrutigerLTStd-Roman" family="Frutiger LT Std" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1256,7 +1245,7 @@
                                             <constraint firstAttribute="height" constant="21" id="IUW-KY-vn8"/>
                                             <constraint firstAttribute="width" constant="65" id="hwD-Q0-1iz"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="FrutigerLTStd-Light" family="Frutiger LT Std" pointSize="11"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="11"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1266,7 +1255,7 @@
                                             <constraint firstAttribute="width" constant="65" id="f2C-Am-dMU"/>
                                             <constraint firstAttribute="height" constant="21" id="yoO-Nn-cgG"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="FrutigerLTStd-Light" family="Frutiger LT Std" pointSize="11"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="11"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1329,7 +1318,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dubai" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Z64-ab-X8o">
                                                     <rect key="frame" x="16" y="24" width="216" height="16"/>
-                                                    <fontDescription key="fontDescription" name="FrutigerLTStd-Roman" family="Frutiger LT Std" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1371,7 +1360,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HP5-I9-vo6">
                                                     <rect key="frame" x="23" y="23" width="176" height="4"/>
-                                                    <fontDescription key="fontDescription" name="FrutigerLTStd-Roman" family="Frutiger LT Std" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1417,7 +1406,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RjX-9X-oKH">
                                                     <rect key="frame" x="23" y="23" width="182" height="4"/>
-                                                    <fontDescription key="fontDescription" name="FrutigerLTStd-Roman" family="Frutiger LT Std" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1719,7 +1708,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="wIz-9u-yg1"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="FrutigerLTStd-Bold" family="Frutiger LT Std" pointSize="18"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1758,13 +1747,13 @@
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfW-pd-5Ws">
                                                                     <rect key="frame" x="8" y="0.0" width="114" height="25"/>
                                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                    <fontDescription key="fontDescription" name="FrutigerLTStd-Light" family="Frutiger LT Std" pointSize="13"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Rg-q3-PJI">
                                                                     <rect key="frame" x="8" y="0.0" width="128" height="17"/>
-                                                                    <fontDescription key="fontDescription" name="FrutigerLTStd-Light" family="Frutiger LT Std" pointSize="13"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                                                     <textInputTraits key="textInputTraits"/>
                                                                 </textField>
                                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="dropdown" translatesAutoresizingMaskIntoConstraints="NO" id="lwk-7S-E6E">
@@ -1846,7 +1835,7 @@
                                                                 </constraint>
                                                                 <constraint firstAttribute="height" constant="23" id="yhb-cf-WU3"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" name="FrutigerLTStd-Roman" family="Frutiger LT Std" pointSize="13"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <state key="normal" title="SEARCH"/>
                                                             <variation key="default">
@@ -1963,6 +1952,6 @@
         <image name="ugmobile" width="33" height="17"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gA1-bv-cME"/>
+        <segue reference="pC4-hj-ruZ"/>
     </inferredMetricsTieBreakers>
 </document>
